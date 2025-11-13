@@ -153,7 +153,7 @@ body {
 }
 
 /* as respostas*/
-.panel-answers h3 {
+.panel-answers button {
     padding: 15px;
     border-radius: 5px;
     text-align: center;
@@ -167,33 +167,33 @@ body {
 }
 
 /* Cores diferentes para diferenciação das respostas*/
-.panel-answers h3:nth-child(1) {
+.panel-answers button:nth-child(1) {
     background: #3498db; 
     border-color: #2980b9;
 }
 
-.panel-answers h3:nth-child(2) {
+.panel-answers button:nth-child(2) {
     background: #2ecc71; 
     border-color: #27ae60;
 }
 
-.panel-answers h3:nth-child(3) {
+.panel-answers button:nth-child(3) {
     background: #e74c3c; 
     border-color: #c0392b;
 }
 
-.panel-answers h3:nth-child(4) {
+.panel-answers button:nth-child(4) {
     background: #f39c12; 
     border-color: #d35400;
 }
 
 /* Efeito hover das respostas */
-.panel-answers h3:hover {
+.panel-answers button:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /* Efeito ao clicar na resposta */
-.panel-answers h3:active {
+.panel-answers button:active {
     transform: translateY(1px);
 }
