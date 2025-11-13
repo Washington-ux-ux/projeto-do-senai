@@ -1,25 +1,21 @@
+/*Reset*/
 * {
-    font-size: 16px;
-    padding: 5px;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
-
-/* area do menu */
+/* Menu principal */
 .menu {
     font-family: 'Press Start 2P', cursive;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 15px 0;
-    gap: 15px;
     background: linear-gradient(145deg, #2c3e50, #1e2b38);
     color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    z-index: 100;
-    width: 100%;
-    box-sizing: border-box;
     border-bottom: 3px solid #f1c40f;
 }
 
@@ -90,11 +86,20 @@
 
 
 /* corpo do site */
-body {
-    min-height: 100vh;
+html, body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
     display: flex;
     flex-direction: column;
+    background: url(/image/cinema.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* O quadro do jogo, onde fica as pergunta e as respostas */
