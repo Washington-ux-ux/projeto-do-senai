@@ -197,3 +197,33 @@ body {
 .panel-answers button:active {
     transform: translateY(1px);
 }
+
+/* --- para o JavaScript --- */
+
+/* Estilo para a resposta CORRETA */
+.panel-answers button.correct {
+    background: #2ecc71 !important; /* Verde (o !important força a sobreposição) */
+    border-color: #27ae60 !important;
+    color: white;
+}
+
+/* Estilo para a resposta INCORRETA */
+.panel-answers button.incorrect {
+    background: #e74c3c !important; /* Vermelho */
+    border-color: #c0392b !important;
+    color: white;
+}
+
+/* Estilo para botões desabilitados (depois de clicar) */
+.panel-answers button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Estilo para as respostas erradas que NÃO foram clicadas */
+.panel-answers button.wrong-answer {
+    background: #808080 !important; /* Cinza */
+    border-color: #505050 !important;
+    color: #ccc;
+    opacity: 0.7; /* Fica um pouco "apagado" */
+}
