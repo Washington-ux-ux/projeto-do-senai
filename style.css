@@ -202,7 +202,7 @@ body {
 
 /* Estilo para a resposta CORRETA */
 .panel-answers button.correct {
-    background: #2ecc71 !important; /* Verde (o !important força a sobreposição) */
+    background: #2ecc71 !important; 
     border-color: #27ae60 !important;
     color: white;
 }
@@ -222,8 +222,42 @@ body {
 
 /* Estilo para as respostas erradas que NÃO foram clicadas */
 .panel-answers button.wrong-answer {
-    background: #808080 !important; /* Cinza */
+    background: #808080 !important; 
     border-color: #505050 !important;
     color: #ccc;
-    opacity: 0.7; /* Fica um pouco "apagado" */
+    opacity: 0.7; 
+}
+
+/* para os botões do teclado como resposta */
+
+/* Cria uma "etiqueta" de tecla no canto do botão */
+.panel-answers button {
+    position: relative; /* Necessário para posicionar a letra */
+}
+
+.panel-answers button::before {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    padding: 2px 6px;
+    background: rgba(0,0,0,0.2);
+    font-family: 'Press Start 2P', cursive; 
+}
+
+/* Define qual letra aparece em cada botão */
+.panel-answers button:nth-child(1)::before { content: 'D'; }
+.panel-answers button:nth-child(2)::before { content: 'F'; }
+.panel-answers button:nth-child(3)::before { content: 'J'; }
+.panel-answers button:nth-child(4)::before { content: 'K'; }
+
+/* Efeito visual quando a tecla é pressionada */
+.panel-answers button.active-key {
+    transform: translateY(2px);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    filter: brightness(1.2);
 }

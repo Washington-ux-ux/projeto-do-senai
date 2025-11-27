@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo quiz - Vire mestre</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -32,15 +32,17 @@
             <div class="panel-question">
                 <h2 id="question-text">?</h2>
             </div>
-            <div class="panel-answers">
-               <button class="btn-answer">?</button>
-                <button class="btn-answer">?</button>
-                <button class="btn-answer">?</button>
-                <button class="btn-answer">?</button>
-           </div>
+                <div class="panel-answers">
+                    <button class="btn-answer">?</button>
+                    <button class="btn-answer">?</button>
+                    <button class="btn-answer">?</button>
+                    <button class="btn-answer">?</button>
+                    
+                    <button id="btn-restart" class="btn-answer correct" style="display: none; grid-column: span 2;">SIM</button>
+                </div>
         </div>
     </div>
     
-    <script src="/script/script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
